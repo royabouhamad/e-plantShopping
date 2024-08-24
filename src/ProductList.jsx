@@ -293,6 +293,7 @@ function ProductList() {
                                         <div className='product-title'>{plant.name}</div>
                                         <p>{plant.description}</p>
                                         <div className='product-price'>{plant.cost}</div>
+                                        <button className='product-button' onClick={() => handleAddToCart(plant)}>{addedToCart[plant.name] === true ? 'Added to cart' : 'Add to cart'}</button>
                                     </div>
 
                                 ))}
